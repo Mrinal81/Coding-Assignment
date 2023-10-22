@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="forms">
+  <div class="survey-form">
+    <form id="form">
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" required><br><br>
+
+      <label for="last-name">Last Name:</label>
+      <input type="text" id="last-name" required><br><br>
+
+      <label for="first-name">Date of Birth:</label>
+      <input type="date" id="date-of-birth" required><br><br>
+
+      <label for="country">Country</label>
+      <select  id="country"  required>
+        <option value="Select Country">Select Your Country</option>
+      </select><br><br>
+
+      <label>Gender:</label><br>
+      <input type="checkbox" id="male" name="gender" value="Male">
+      <label for="male">Male</label><br>
+
+      <input type="checkbox" id="female" name="gender" value="Female">
+      <label for="female">Female</label><br>
+
+      <input type="checkbox" id="other" name="gender" value="Other">
+      <label for="other">Other</label><br><br>
+
+      <label for="profession">Profession:</label>
+    <input type="text" id="profession" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required><br><br>
+
+    <label for="mobile">Mobile Number:</label>
+    <input type="tel" id="mobile" required><br><br>
+
+    <div class="btn">
+    <button id="submit">Submit</button>
+    <button id="reset" type="reset">Reset</button>
+  </div>
+    </form>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+          <button class="close" id="close-popup" type="reset">&times;</button>
+          <h3>Survey Form Submission</h3>
+          <div id="popup-content"></div>
+      </div>
+  </div>
+  </div>
+  <div class="right-img">
+    <img src="./images/second.svg" alt="svg-img" id="img">
+  </div>
+</div>
+  
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
